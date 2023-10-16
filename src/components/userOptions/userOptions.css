@@ -1,0 +1,30 @@
+.optionsContainer{
+    position: absolute;
+    background-color: rgb(235, 251, 235);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    right: 5vh;
+    top: 11vh;
+    padding: 1rem;
+    gap: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btnOption{
+    border: none;
+    background-color: transparent;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.btnOption:hover{
+    background-color: rgb(215, 219, 223, .3);
+}
+.btnCerrarSesion:hover{
+    background-color: rgb(241, 201, 201, .3);
+}

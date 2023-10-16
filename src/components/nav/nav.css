@@ -1,0 +1,145 @@
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+  height: 15vh;
+}
+
+.logoContainerNav {
+  justify-self: center;
+  height: 8vh;
+}
+
+.logo {
+  height: 100%;
+}
+
+.navOptions {
+  width: 100%;
+}
+
+.navOptionsContainer {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  padding: 10px;
+}
+
+.navOptionsContainer::before,
+.navOptionsContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(177, 177, 177, 0.5),
+    rgb(177, 177, 177, 0.5),
+    transparent
+  );
+}
+
+.navOptionsContainer::before {
+  top: 0;
+
+  height: .8px;
+}
+
+.navOptionsContainer::after {
+  bottom: 0;
+  height: 1px;
+}
+.navOption__item__link {
+  font-size: 1rem;
+  font-weight: 200;
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
+
+.navOption__item__link:hover {
+  font-weight: 400;
+  color: rgb(90, 105, 122);
+}
+
+.userOptionsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0 .7rem;
+}
+
+.searchForm{
+  border: .5px solid rgb(121, 121, 121,.5);
+  border-radius: 25px;
+  width: fit-content;
+  padding: .3rem .6rem;
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+}
+
+.searchInput{
+  border: none;
+  outline: none;
+  color: rgb(79, 79, 79,.6);
+}
+
+.searchInput::placeholder{
+  color: rgb(79, 79, 79,.4);
+}
+
+.btnSubmitSearch{
+  border: none;
+  background: transparent;
+  display: grid;
+  place-content: center;
+}
+.btnUserOptionsContainer{
+  display: flex;
+  justify-self: end;
+  gap: 2rem;
+}
+
+.shopBtn{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 200;
+}
+
+.btnLogin{
+  border: none;
+  border-radius: 25px;
+  background: rgb(73, 136, 96);
+  color: white;
+  font-weight: 200;
+  padding: .6rem 2rem;
+  text-decoration: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btnLogin:hover{
+  background: rgb(63, 126, 86);
+}
+
+.userNav{
+  border: none;
+  border-radius: 25px;
+  background: rgb(190, 190, 190,.2);
+  color: black;
+  font-weight: 200;
+  padding: .6rem 2rem;
+  text-decoration: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

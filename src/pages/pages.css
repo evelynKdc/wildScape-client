@@ -1,0 +1,14 @@
+.pageContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.mainHomePage{
+    width: 100%;
+    height: 82vh;
+
+}
+.mainHomePage img{
+    width: 100%;
+    height: 100%;
+}
