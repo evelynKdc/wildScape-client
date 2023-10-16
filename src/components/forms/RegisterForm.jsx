@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { registerSchema } from "../../utils/validationSchemas";
 import { registerUser } from "../../service/authService";
+import logo from "../../assets/img/logoDoradoForms.png";
 import "./form.css";
 export const RegisterForm = () => {
   const navigate = useNavigate();
@@ -33,6 +34,9 @@ export const RegisterForm = () => {
     >
       {({ isSubmitting }) => (
         <Form className="formContainer">
+          <a href="/" className="logoContainer">
+            <img src={logo} alt="logo"  className="logo"/>
+          </a>
           <div className="dualContainer">
             <div className="inputGroup inputGroup--dual">
               <label htmlFor="name" className="labelInput">

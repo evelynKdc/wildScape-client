@@ -1,18 +1,30 @@
 .formContainer {
-  border-radius: 3.125rem;
-  background: rgba(255, 255, 255, 0.42);
-  box-shadow: -4px 8px 4px 0px rgba(135, 134, 135, 0.1);
+  border-radius: 1.7rem;
+  background: rgba(230, 230, 230, 0.6);
+  box-shadow: -4px 8px 4px 0px rgba(105, 105, 105, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 1.5rem;
-  height: 90%;
-  width: 84%;
+  gap: 1.2rem;
+  height: fit-content;
+  width: 40%;
   padding: 2.8rem;
 }
 
 .formContainer--login{
-    height: 70%;
+    gap: 1.8rem;
+    height: 60;
+    width: 30%;
+}
+
+.logoContainer{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-bottom: .6rem;
+  
+}
+.logo{
+  width: 140px;
 }
 .inputGroup {
   display: flex;
@@ -36,7 +48,7 @@
 .txtInput {
   background-color: transparent;
   border: none;
-  border-bottom: 0.5px solid rgb(146, 146, 146, 0.6);
+  border-bottom: 0.5px solid rgba(83, 82, 82, 0.9);
 }
 
 .txtInput:focus {
@@ -48,7 +60,7 @@
 }
 
 .linkForm {
-  color: var(--purpleDark);
+  color: #404040;
 }
 
 .btnSubmit {
@@ -57,13 +69,13 @@
   font-weight: 400;
   text-transform: capitalize;
   border: none;
-  border-radius: var(--borderRadiusRegular);
-  background-color: var(--purple);
-  padding: 0.6rem;
+  border-radius: 25px;
+  background-color: #212121;
+  padding: 0.8rem 0.6rem;
 }
 
 .btnSubmit:hover {
-  background-color: var(--purpleDark);
+  background-color: #434343;
 }
 
 .separatorO{
@@ -74,4 +86,20 @@
     font-size: .8rem;
     font-weight: 400;
     color: var(--grayFont);
+}
+
+@media (max-width: 767px) {
+
+  .formContainer{
+    width: 80%;
+    gap: .4rem;
+  }
+  .dualContainer {
+    flex-direction: column;
+  }
+  .inputGroup--dual {
+    width: 100%;
+  }
+  
+
 }

@@ -1,10 +1,9 @@
 import { LoginForm } from "../../components/forms/LoginForm"
-
+import "./authPages.css"
 export const LoginPage = () => {
   return (
-    <div>
-      Login page
+    <main className="mainContainer">
       <LoginForm/>
-    </div>
+    </main>
   )
 }

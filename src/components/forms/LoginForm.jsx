@@ -3,6 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import { useAuth } from "../../context/AuthContext";
 import { loginSchema } from "../../utils/validationSchemas";
 import { loginUser } from "../../service/authService";
+import logo from "../../assets/img/logoDoradoForms.png";
 
 export const LoginForm = () => {
   const { login } = useAuth();
@@ -33,6 +34,10 @@ export const LoginForm = () => {
     >
       {({ isSubmitting }) => (
         <Form className="formContainer formContainer--login">
+          <a href="/" className="logoContainer">
+            <img src={logo} alt="logo"  className="logo"/>
+          </a>
+
           <div className="inputGroup">
             <label htmlFor="email" className="labelInput">
               Correo Electrónico
@@ -53,7 +58,7 @@ export const LoginForm = () => {
             </div>
           </div>
           <Link to="/registro" className="linkForm">
-            Aún no soy parte de Mowton
+            Aún no soy parte de WildScape
           </Link>
           <button type="submit" disabled={isSubmitting} className="btnSubmit">
             Iniciar Sesión
