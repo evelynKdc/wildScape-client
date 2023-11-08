@@ -88,6 +88,12 @@
     color: var(--grayFont);
 }
 
+.groupContainer{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
 @media (max-width: 767px) {
 
   .formContainer{

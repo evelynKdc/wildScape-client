@@ -81,7 +81,7 @@ export const Nav = () => {
             </a>
           </li>
           <li className="navOption__item">
-            <a href="/" className="navOption__item__link">
+            <a href="/actividades" className="navOption__item__link">
               Actividades
             </a>
           </li>
